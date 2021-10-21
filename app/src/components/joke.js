@@ -1,16 +1,16 @@
 import React, {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {getDog} from "../actions/dogActions";
+import {getJoke} from "../actions/jokeActions";
 
-const Dog = (props) => {
+const Joke = (props) => {
 
   
   const dispatch = useDispatch();
   const {joke, loading} = useSelector((state) => state);
   console.log(joke)
   useEffect(() => {
-    getDog(dispatch);
-  }, [getDog]);
+    getJoke(dispatch);
+  }, [getJoke]);
 
   if (loading) {
     return <><h2> Loading.....</h2></>
@@ -23,9 +23,10 @@ const Dog = (props) => {
 
       <p>{joke.data.delivery}</p>
 
+      <button onClick={() => getJoke(dispatch)}>Click for new joke!</button>
     </div>
   )
 
 }
 
-export default Dog;
+export default Joke;

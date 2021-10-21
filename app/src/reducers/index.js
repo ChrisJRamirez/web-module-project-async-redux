@@ -3,14 +3,14 @@ import {
   FETCHING_QUOTE_SUCCESS, 
   FETCHING_QUOTE_FAILURE,
 
-} from "../actions/dogActions"
+} from "../actions/jokeActions"
 
 
 const initialState = {
   loading: false,
   joke: "",
   error: "",
-  title: "Web PT32 Dog API"
+  title: "Web PT32 Joke API"
 
 }
 

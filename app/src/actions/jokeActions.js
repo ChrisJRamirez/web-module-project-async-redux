@@ -4,7 +4,7 @@ export const FETCHING_QUOTE_START = "FETCHING_QUOTE_START";
 export const FETCHING_QUOTE_SUCCESS = "FETCHING_QUOTE_SUCCESS";
 export const FETCHING_QUOTE_FAILURE = "FETCHING_QUOTE_FAILURE";
 
-export const getDog = (dispatch) => {
+export const getJoke = (dispatch) => {
   
 
   
